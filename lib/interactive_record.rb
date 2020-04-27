@@ -58,7 +58,7 @@ class InteractiveRecord
   end
   
   def self.find_by(hash)
-    DB[:conn].execute(SELECT * FROM)
+    DB[:conn].execute(SELECT * FROM *{self.})
   end
   
 end
