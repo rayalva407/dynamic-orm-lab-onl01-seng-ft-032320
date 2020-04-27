@@ -21,8 +21,8 @@ class InteractiveRecord
   end
   
   def initialize(objects={})
-    objects.each do |key, value|
-      self.send("#{key}=", value)
+    objects.each do |k, v|
+      self.send("#{k}=", v)
     end
   end
   
