@@ -31,7 +31,7 @@ class InteractiveRecord
   end
   
   def col_names_for_insert
-    self.class.column_names.delete if
+    self.class.column_names.delete_if
   end
   
   def save
